@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Khoa Nguyen — Portfolio</title>
+  <style>
+    :root{--accent:#0b74de;--bg:#f7f9fc;--card:#fff;--muted:#65748b}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; color:#102a43; background:var(--bg); line-height:1.6}
+    header{background:linear-gradient(90deg, rgba(11,116,222,0.08), transparent);backdrop-filter: blur(4px);border-bottom:1px solid rgba(16,42,67,0.04)}
+    .container{max-width:1000px;margin:0 auto;padding:1rem}
+    .nav{display:flex;align-items:center;justify-content:space-between}
+  .brand{font-weight:700;font-size:1.1rem;color:var(--accent)}
+    nav ul{list-style:none;display:flex;gap:1rem;padding:0;margin:0}
+    nav a{text-decoration:none;color:var(--muted);font-weight:600}
+    .hero{padding:4rem 0;display:grid;grid-template-columns:1fr;gap:1.5rem;align-items:center}
+    .hero h1{font-size:2rem;margin:0 0 .5rem}
+    .hero p{margin:0;color:var(--muted)}
+    section{margin:2rem 0}
+    .card{background:var(--card);padding:1.25rem;border-radius:10px;box-shadow:0 6px 18px rgba(16,42,67,0.06)}
+    .skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1rem;margin-top:1rem}
+    .skill{padding:.75rem;border-radius:8px;border:1px solid rgba(16,42,67,0.04);background:linear-gradient(180deg,#fff,#fbfdff)}
+    .skill h4{margin:.1rem 0 .25rem;font-size:.95rem}
+    .skill p{margin:0;color:var(--muted);font-size:.875rem}
+    footer{padding:2rem 0;text-align:center;color:var(--muted);font-size:.9rem}
+    @media(min-width:800px){.hero{grid-template-columns:1fr 360px}.hero .intro{max-width:60ch}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+  <div class="brand">Khoa Nguyen</div>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="intro">
+  <h1>Welcome — I'm Khoa Nguyen</h1>
+  <p>I'm a data scientist focused on turning data into actionable insights. I build models, visualizations, and data products that help teams make better decisions.</p>
+      </div>
+      <div class="card">
+        <h3>Quick info</h3>
+  <p style="color:var(--muted);margin-top:.5rem">Based in Your City · Open to collaboration · Email: <a href="mailto:knguyen42000@gmail.com">knguyen42000@gmail.com</a></p>
+  <p style="margin-top:.5rem"><a href="Khoa-Nguyen-Resume-2025.pdf" download style="color:var(--accent);font-weight:700;text-decoration:none">Download Resume</a></p>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="card">
+  <p>I'm Khoa (Kevin) Nguyen — a detail-oriented Bachelor of Health Science (CSULB, 2024) with hands-on experience in medical-assistant and front-desk roles. I specialize in patient intake, scheduling, billing, and maintaining HIPAA-compliant records. I'm bilingual in Vietnamese and English and have strong administrative, communication, and customer-service skills. I'm open to roles that leverage my clinical and administrative experience while I continue building technical skills.</p>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="card">
+        <div style="margin-bottom:0.5rem">
+          <strong>Coastline Orthopaedic</strong> — Front Desk Checkout
+          <div style="color:var(--muted);font-size:.9rem">Fountain Valley, CA · May 2025 – Aug 2025</div>
+        </div>
+        <ul>
+          <li>Managed patient check-out, payments, and billing inquiries while ensuring HIPAA compliance.</li>
+          <li>Coordinated follow-ups and worked closely with clinical staff to keep clinic flow on schedule.</li>
+        </ul>
+
+        <div style="margin-top:1rem;margin-bottom:0.5rem">
+          <strong>Garden Park Care Center</strong> — Receptionist / Activity Assistant
+          <div style="color:var(--muted);font-size:.9rem">Orange, CA · Mar 2025 – May 2025</div>
+        </div>
+        <ul>
+          <li>Welcomed residents and visitors, handled multi-line phone systems, and maintained confidential records.</li>
+          <li>Supported admissions/discharges and assisted with activities and events to improve resident engagement.</li>
+        </ul>
+
+        <div style="margin-top:1rem;margin-bottom:0.5rem">
+          <strong>OC Diabetes & Endocrinology</strong> — Medical Assistant / Physical Therapist
+          <div style="color:var(--muted);font-size:.9rem">Fountain Valley, CA · Oct 2021 – Oct 2022</div>
+        </div>
+        <ul>
+          <li>Performed vitals, glucose checks, assisted physicians with exams, and helped educate patients on self-care.</li>
+          <li>Maintained medical records and supported clinic administrative workflows.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="card">
+        <p><strong>Bachelor of Health Science</strong><br>California State University, Long Beach — Graduated May 2024<br><small style="color:var(--muted)">2024 President's Honor Award</small></p>
+        <p style="margin-top:.5rem"><strong>Associate Degree in Liberal Arts</strong><br>Orange Coast College & Golden West College — Graduated 2021</p>
+        <p style="margin-top:.5rem"><strong>High school / GED</strong><br>La Quinta High School — June 2018</p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="card">
+        <p style="color:var(--muted)">Technical skills focused on data science, machine learning, and data engineering.</p>
+        <div class="skills-grid">
+          <div class="skill">
+            <h4>Python</h4>
+            <p>Pandas, NumPy, scikit-learn, PyTorch</p>
+          </div>
+          <div class="skill">
+            <h4>Statistics & ML</h4>
+            <p>Regression, Classification, Time Series, Model Evaluation</p>
+          </div>
+          <div class="skill">
+            <h4>Data Visualization</h4>
+            <p>Matplotlib, Seaborn, Plotly, Dash</p>
+          </div>
+          <div class="skill">
+            <h4>Data Engineering</h4>
+            <p>SQL, Airflow, ETL pipelines, BigQuery</p>
+          </div>
+          <div class="skill">
+            <h4>Model Deployment</h4>
+            <p>Docker, FastAPI, MLOps basics</p>
+          </div>
+          <div class="skill">
+            <h4>Tools & Workflow</h4>
+            <p>Git, CI/CD, Jupyter, Experiment tracking</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+  <p style="color:var(--muted)">Want to work together? Email me at <a href="mailto:knguyen42000@gmail.com">knguyen42000@gmail.com</a> or connect on LinkedIn. You can also <a href="Khoa-Nguyen-Resume-2025.pdf" download>download my resume</a>.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+  <small>&copy; <span id="year"></span> Khoa Nguyen. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
